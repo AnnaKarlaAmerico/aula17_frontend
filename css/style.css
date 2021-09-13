@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  animation: slideScreen 5s infinite;
+}
+
+@keyframes slideScreen {
+  from{
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(15%);
+    opacity: 1;
+  }
+}
+
+.icone {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: scale 5s infinite;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0) skew(0);
+  }
+  to {
+    transform: scale(1) skew(1);
+  }
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  width: 100px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  transition: all 0.50s ease-in-out;
+}
+button:hover {
+  background-color: blue;
+}
